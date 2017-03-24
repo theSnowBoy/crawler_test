@@ -1,7 +1,7 @@
 #coding=utf-8
 from selenium import webdriver
 import time
-
+#TODO 有问题代码
 # 设置代理。
 profile = webdriver.FirefoxProfile()
 profile.set_preference('network.proxy.type', 1)   #默认值0，就是直接连接；1就是手工配置代理。
