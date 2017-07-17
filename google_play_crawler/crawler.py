@@ -1,6 +1,7 @@
 #-*- coding:utf-8
 from selenium import webdriver
 import time
+import datetime
 
 import sys
 default_encoding = 'utf-8'
@@ -8,19 +9,24 @@ if sys.getdefaultencoding() != default_encoding:
     reload(sys)
     sys.setdefaultencoding(default_encoding)
 
-def craw_one_app_reviews():
+'''
+ url 格式实例： "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en"
+'''
+def craw_one_app_reviews(url):
     #浏览器路径
     FIREFOX_PATH = "F:/WangKang/python_project/crawler_test/geckodriver.exe"
 
     driver=webdriver.Firefox( executable_path=FIREFOX_PATH)
     # url='http://www.baidu.com'
-    url = "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en"
+
     driver.get(url)
     time.sleep(3)
     reviews = driver.find_element_by_xpath(".//div[@data-load-more-section-id='reviews']")
+    apk_id = reviews.get_attribute("data-load-more-docid")
 
     results = []
-    for i in range(0,5):
+    review_id = 1;
+    for i in range(0,2):
         reviews.find_element_by_xpath("./button[@aria-label='See More']").click()
         time.sleep(1.5)
         single_reviews = reviews.find_elements_by_xpath(".//div[@class='expand-page' and @style='width: 100%; opacity: 1;']//div[@class='single-review']")
@@ -31,18 +37,22 @@ def craw_one_app_reviews():
                 print "what?"
 
             author = single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='author-name']").text
-            review_date = single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='review-date']").text
+            review_date = extract_review_date(single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='review-date']").text)
             review_score = extract_review_score(single_review.find_element_by_xpath("./div[@class='review-header']//div[@class='current-rating']").get_attribute("style"))
             review_title = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']/span[@class='review-title']").text
             review_body = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']").text
-            result.extend([author,review_date,review_score,review_title,review_body])
+            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            result.extend([apk_id,review_id,url,author,review_score,review_title,review_body,review_date,timestamp])
+            review_id += 1
             results.append(result)
+
             print '评论作者：'+ author
             print '评论日期：'+ review_date
             print '评分：'+ str(review_score)
             print '评论题目：' + review_title
             print '评论内容：'+ review_body
-    print results
+    return results
 
 '''
 抽取评论的评分。
@@ -77,14 +87,39 @@ def extract_review_date(date_raw):
     month = dates[date_array[0]]
     day = date_array[1][:-1]
     result = "{0}-{1}-{2}".format(year,month,day)
-    print "date is : "+ result
+    return result
+
+def save_db(reviews):
+    print "准备插入数据"
+    import MySQLdb
+
+    conn = MySQLdb.connect(
+        host='127.0.0.1',
+        port=3306,
+        user='root',
+        passwd='123456',
+        db='app_sense',
+    )
+    sql = "INSERT IGNORE INTO review VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    try:
+        cursor = conn.cursor()
+        cursor.executemany(sql, reviews)
+        conn.commit()
+    except:
+        print "出现问题"
+    finally:
+        cursor.close()
+        conn.close()
+        print "插入数据结束"
+
 
 
 
 if __name__=='__main__':
     print "start"
-    extract_review_date("January 1, 2016")
-
+    url = "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en"
+    reviews = craw_one_app_reviews(url)
+    save_db(reviews)
     print "end"
 
 
