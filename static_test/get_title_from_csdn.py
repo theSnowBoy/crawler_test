@@ -55,5 +55,4 @@ if __name__=='__main__':
     my_url2 = "http://blog.csdn.net/TheSnowBoy_2/article/list/"
     for i in range(1,11):
         response = get_data_from_net(my_url2 + str(i)) # 拼接成url。
-
         filtrate_data(response.read())

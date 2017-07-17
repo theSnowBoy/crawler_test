@@ -6,9 +6,9 @@ class CommentFromHiapk():
     def __init__(self):
         # 设置代理服务器。
         profile = webdriver.FirefoxProfile()
-        profile.set_preference('network.proxy.type', 1)  # 默认值0，就是直接连接；1就是手工配置代理。
-        profile.set_preference('network.proxy.http', "116.242.227.201")
-        profile.set_preference('network.proxy.http_port', "3128")
+        # profile.set_preference('network.proxy.type', 1)  # 默认值0，就是直接连接；1就是手工配置代理。
+        # profile.set_preference('network.proxy.http', "116.242.227.201")
+        # profile.set_preference('network.proxy.http_port', "3128")
         # profile.set_preference('network.proxy.ssl',ip)
         # profile.set_preference('network.proxy.ssl_port', port)
         profile.update_preferences()

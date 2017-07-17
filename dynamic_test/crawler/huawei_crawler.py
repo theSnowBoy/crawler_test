@@ -53,26 +53,48 @@ def save_url_data(file_name, url_list):
     for url in url_list:
         fh.write(url + '\n')
     fh.close()
+def read_url_data(file_name):
+    fh = open(file_name,"r")
+    urls = fh.readlines()
+    return urls
+
+def save_db(results):
+    import db.get_app_info as app_info
+    print "inserting ..."
+    dbHelper = app_info.DBHelper(db="test_app")
+    sql = "INSERT IGNORE INTO app_huawei(app_title,download,file_size,updata_date,developer_name,version_code) VALUES (%s,%s,%s,%s,%s,%s)"
+    dbHelper.insert_app_info(sql,results)
 
 def get_one_app_data(url):
+    '''
+    示例：
+    get_one_app_data("http://appstore.huawei.com/app/C140471")
+    '''
+    result = []
     driver = get_driver()
     driver.get(url)
-    time.sleep(0.5)
+    time.sleep(1)
+    #TODO 未进行预处理
     print driver.title
-    # print driver.page_source
-    # download = driver.find_element_by_xpath("//div[@class='unit-main detail-part']//span[@class='grey sub']")
-    app_info = driver.find_elements_by_xpath("//div[@class='unit-main detail-part']//ul[@class='app-info-ul nofloat']/li[@class='ul-li-detail']/span")
+    main_part = driver.find_element_by_xpath("//div[@class='unit-main detail-part']")
+
+    title  = main_part.find_element_by_xpath("//span[@class='title']")
+    download = driver.find_element_by_xpath("//span[@class='grey sub']")
+    app_info = driver.find_elements_by_xpath("//ul[@class='app-info-ul nofloat']/li[@class='ul-li-detail']/span")
+    result.append(title.text)
+    result.append(download.text)
+
     for app in app_info:
-        print app.text
-    # print download.tag_name
-    # print download.get_attribute("class")
-    # print download.is_displayed()
+        result.append(app.text)
+    return result
 
+    for data in result:
+        print data
 
-# test ------------------------------------------------------
+    # test ------------------------------------------------------
 # 1. 获取不同 app 的链接。
 # app_urls = get_urls("http://appstore.huawei.com/game/list_2_2_1")
-# path = "../../test/slenium_test/huawei_app_urls"
+path = "../../test/slenium_test/huawei_app_urls"
 # import os
 # if not os.path.exists(path):
 #     os.open(path,os.O_CREAT)
@@ -81,9 +103,19 @@ def get_one_app_data(url):
 # save_url_data(path,app_urls)
 
 # 3.打开文件，读取url并且访问。
-get_one_app_data("http://appstore.huawei.com/app/C140471")
+urls = read_url_data(path)
+app_results = []
+# for url in urls:
+#     app_results.append(get_one_app_data(url))
+for i in range(0,3):
+    app_results.append(get_one_app_data(urls[i]))
 
 #4.保存
+save_db(app_results)
+
+
+
+
 
 
 

@@ -1,0 +1,67 @@
+1500260512209	geckodriver	INFO	Listening on 127.0.0.1:57442
+1500260514108	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
+1500260518682	Marionette	INFO	Listening on port 57461
+1500260519363	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1499852263527	Marionette	INFO	Ceased listening
+s/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
+Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: TypeError: to is null
+Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1743:11
+send/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:570:13
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+Line: 1743, column: 11
+console.error: 
+  Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: TypeError: to is null
+Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1743:11
+send/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:570:13
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+Line: 1743, column: 11
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resourceJavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 584: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+1499852261622	Marionette	INFO	Ceased listening

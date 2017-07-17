@@ -50,7 +50,7 @@ def visit():
         driver = webdriver.PhantomJS(desired_capabilities=dcap)
         driver.delete_all_cookies()
         for url in urls:
-            time.sleep(4)
+            time.sleep(20)
             driver.get(url)
             print "visiting url : " + url
         driver.close()

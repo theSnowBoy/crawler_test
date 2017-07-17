@@ -1,0 +1,7 @@
+1498031265032	geckodriver	INFO	Listening on 127.0.0.1:49576
+1498031267082	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
+1498031271522	Marionette	INFO	Listening on port 49582
+1498031276452	Marionette	INFO	Ceased listening
+rors will be ignored for this session
+JavaScript error: http://static.blog.csdn.net/scripts/csdn_blog_detail.min.js, line 2: TypeError: m is undefined
+1498031795811	Marionette	INFO	Ceased listening
