@@ -2,7 +2,7 @@
 from selenium import webdriver
 import time
 import datetime
-
+import traceback
 import sys
 default_encoding = 'utf-8'
 if sys.getdefaultencoding() != default_encoding:
@@ -26,9 +26,9 @@ def craw_one_app_reviews(url):
 
     results = []
     review_id = 1;
-    for i in range(0,2):
+    for i in range(0,200): # 设置为200
         reviews.find_element_by_xpath("./button[@aria-label='See More']").click()
-        time.sleep(1.5)
+        time.sleep(1)
         single_reviews = reviews.find_elements_by_xpath(".//div[@class='expand-page' and @style='width: 100%; opacity: 1;']//div[@class='single-review']")
 
         for single_review in single_reviews:
@@ -103,11 +103,18 @@ def save_db(reviews):
 
     sql = "INSERT IGNORE INTO review VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     try:
+        conn.set_character_set('utf8')
+
         cursor = conn.cursor()
+        cursor.execute('SET NAMES utf8;')
+        cursor.execute('SET CHARACTER SET utf8;')
+        cursor.execute('SET character_set_connection=utf8;')
+
         cursor.executemany(sql, reviews)
         conn.commit()
-    except:
+    except Exception,e :
         print "出现问题"
+        print 'traceback.print_exc():'; traceback.print_exc()
     finally:
         cursor.close()
         conn.close()
