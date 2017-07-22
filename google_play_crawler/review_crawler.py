@@ -26,32 +26,40 @@ def craw_one_app_reviews(url):
 
     results = []
     review_id = 1;
+    eception_count = 0;
     for i in range(0,200): # 设置为200
-        reviews.find_element_by_xpath("./button[@aria-label='See More']").click()
-        time.sleep(1)
+        try:
+            reviews.find_element_by_xpath("./button[@aria-label='See More']").click()
+            time.sleep(1)
+        except:
+            print  ' traceback.print_exc():';traceback.print_exc()
+            traceback.print_exc()
+
+            continue
         single_reviews = reviews.find_elements_by_xpath(".//div[@class='expand-page' and @style='width: 100%; opacity: 1;']//div[@class='single-review']")
 
         for single_review in single_reviews:
             result = []
-            if(single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='author-name']").text == ''):
-                print "what?"
+            try:
+                author = single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='author-name']").text
+                review_date = extract_review_date(single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='review-date']").text)
+                review_score = extract_review_score(single_review.find_element_by_xpath("./div[@class='review-header']//div[@class='current-rating']").get_attribute("style"))
+                review_title = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']/span[@class='review-title']").text
+                review_body = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']").text
+                timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            author = single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='author-name']").text
-            review_date = extract_review_date(single_review.find_element_by_xpath("./div[@class='review-header']//span[@class='review-date']").text)
-            review_score = extract_review_score(single_review.find_element_by_xpath("./div[@class='review-header']//div[@class='current-rating']").get_attribute("style"))
-            review_title = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']/span[@class='review-title']").text
-            review_body = single_review.find_element_by_xpath("./div[@class='review-body with-review-wrapper']").text
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-            result.extend([apk_id,review_id,url,author,review_score,review_title,review_body,review_date,timestamp])
-            review_id += 1
-            results.append(result)
-
-            print '评论作者：'+ author
-            print '评论日期：'+ review_date
-            print '评分：'+ str(review_score)
-            print '评论题目：' + review_title
-            print '评论内容：'+ review_body
+                result.extend([apk_id,review_id,url,author,review_score,review_title,review_body,review_date,timestamp])
+                review_id += 1
+                results.append(result)
+                print '评论作者：' + author
+                print '评论日期：' + review_date
+                print '评分：' + str(review_score)
+                print '评论题目：' + review_title
+                print '评论内容：' + review_body
+            except:
+                eception_count += 1
+                print str(eception_count) + ' traceback.print_exc():';traceback.print_exc()
+                continue
     return results
 
 '''
@@ -82,12 +90,15 @@ dates = {'January':'1',
 测试数据形式： "January 1, 2016"
 '''
 def extract_review_date(date_raw):
-    date_array = date_raw.split(' ')
-    year = date_array[2]
-    month = dates[date_array[0]]
-    day = date_array[1][:-1]
-    result = "{0}-{1}-{2}".format(year,month,day)
-    return result
+    try:
+        date_array = date_raw.split(' ')
+        year = date_array[2]
+        month = dates[date_array[0]]
+        day = date_array[1][:-1]
+        result = "{0}-{1}-{2}".format(year,month,day)
+        return result
+    except:
+        raise Exception("日期处理错误：" + date_raw)
 
 def save_db(reviews):
     print "准备插入数据"
@@ -113,7 +124,6 @@ def save_db(reviews):
         cursor.executemany(sql, reviews)
         conn.commit()
     except Exception,e :
-        print "出现问题"
         print 'traceback.print_exc():'; traceback.print_exc()
     finally:
         cursor.close()

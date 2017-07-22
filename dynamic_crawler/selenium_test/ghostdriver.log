@@ -1,0 +1,150 @@
+[INFO  - 2017-07-22T01:39:47.877Z] GhostDriver - Main - running on port 50713
+[INFO  - 2017-07-22T01:39:48.971Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)","webSecurityEnabled":true}
+[INFO  - 2017-07-22T01:39:48.971Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.customHeaders:  - {}
+[INFO  - 2017-07-22T01:39:48.971Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)"}
+[INFO  - 2017-07-22T01:39:48.971Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a617c600-6e7e-11e7-9bbd-8fb4fafbe553
+[ERROR - 2017-07-22T01:40:09.193Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:09.193Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75675350:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:24.718Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR[INFO  - 2017-07-22T01:44:22.742Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-22T01:44:22.743Z] SessionManagerReqHand - _cleanupWindowlessSessions - Deleted Session '9719e200-6e7e-11e7-9397-1380e0e0d0fc', because windowless
+sion [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:30.350Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75674744:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:45.625Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:45.625Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:50.791Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:40:50.791Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75671335:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:06.054Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:06.055Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:11.730Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:11.730Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75670408:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:26.992Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:26.992Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:32.522Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:32.522Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75670229:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:47.798Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:47.798Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:53.569Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:41:53.569Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75646362:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:08.850Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:08.850Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:14.431Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:14.431Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75634956:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:29.716Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:29.716Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:35.304Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:35.304Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75614633:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:50.598Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:50.598Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:57.188Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: TypeError: null is not an object (evaluating 'document.body.appendChild')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:42:57.189Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://blog.csdn.net/thesnowboy_2/article/details/75600674:60)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:12.468Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:12.469Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:33.339Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:33.339Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:54.195Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:43:54.195Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:44:16.176Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - msg: Error: load css timeout : http://bdimg.share.baidu.com/static/api/css/share_style0_16.css?v=6aba13f0.css
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-07-22T01:44:16.176Z] Session [a617c600-6e7e-11e7-9bbd-8fb4fafbe553] - page.onError - stack:
+  (anonymous function) (http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=416856:1)
+
+  phantomjs://platform/console++.js:263 in error
