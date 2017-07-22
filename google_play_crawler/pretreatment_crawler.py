@@ -13,18 +13,44 @@ def get_app_urls(url):
     driver.get(url)
     time.sleep(2)
 
-
-    for i in range(0, 200):
+    see_more = driver.find_element_by_xpath("//div[@id='footer-content']/button[@id='show-more-button']")
+    for i in range(0, 500):
+        if(see_more.get_attribute("style") == ""):
+            see_more.click()
+            time.sleep(2)
         driver.find_element_by_tag_name('body').send_keys(Keys.ARROW_DOWN)  # 在这里使用模拟的下方向键
         time.sleep(0.1)
     app_list = driver.find_element_by_xpath(".//div[@id='body-content']//div[@class='main-content']//div[@class='id-card-list card-list two-cards']")
     app_urls = app_list.find_elements_by_xpath("./div[@class='card no-rationale square-cover apps small']//div[@class='details']/a[@class='card-click-target']")
+
     count = 0;
     for app_url in app_urls:
-        # if(app_url.get_attribute("aria-hidden") == "true"):
         count +=1
         print app_url.get_attribute("href")
     print "app url number :" + str(count)
 
+def generate_english_urls():
+    origins = open('F:\WangKang\python_project\crawler_test\data\shooping_app_urls.txt', 'r+')
+    results=""
+    try:
+        #拼接成英文url地址。
+        for app_url in origins.readlines():
+            results =  results + app_url.replace("\n","") + "&hl=en\n"
+
+        origins.write(results)
+
+    finally:
+        origins.close()
+
+    new_file = open(r'F:\WangKang\python_project\crawler_test\data\shooping_app_urls.txt', 'w+')
+    try:
+        new_file.write(results)
+    finally:
+        new_file.close()
+
+
 if __name__ == '__main__':
-    get_app_urls(test_url)
+    # get_app_urls(test_url)
+    print "start"
+    generate_english_urls()
+    print "end"

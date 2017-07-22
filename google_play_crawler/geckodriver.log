@@ -1,20 +1,18 @@
-1500706792001	geckodriver	INFO	Listening on 127.0.0.1:59176
-1500706794022	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
-1500706797710	Marionette	INFO	Listening on port 59188
-1500706798253	Marionette	WARN	TLS certificate errors will be ignored for this session
-1500706786785	Marionette	INFO	Ceased listening
-示一个节点；显示全部 #1 个节点' for value 301 is invalid -- plural rule #1;
+1500708604464	geckodriver	INFO	Listening on 127.0.0.1:56105
+1500708606527	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
+1500708610502	Marionette	INFO	Listening on port 56126
+1500708610873	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500709033043	Marionette	INFO	Ceased listening
+s thrown and uncaught in a Task.
 
-1500706368495	Marionette	INFO	Ceased listening
-: TypeError: NetworkError when attempting to fetch resource.
+Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
-1500705343599	Marionette	INFO	Ceased listening
-: TypeError: quads is undefined
-Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: TypeError: to is null
-Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1743:11
-send/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:570:13
-exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
+1500708298845	Marionette	INFO	Ceased listening
+s/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
 exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
 Line: 1743, column: 11
 console.error: 
