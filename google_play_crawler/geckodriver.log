@@ -1,15 +1,16 @@
-1500260512209	geckodriver	INFO	Listening on 127.0.0.1:57442
-1500260514108	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
-1500260518682	Marionette	INFO	Listening on port 57461
-1500260519363	Marionette	WARN	TLS certificate errors will be ignored for this session
-*************************
-A coding exception was thrown and uncaught in a Task.
+1500706792001	geckodriver	INFO	Listening on 127.0.0.1:59176
+1500706794022	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
+1500706797710	Marionette	INFO	Listening on port 59188
+1500706798253	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500706786785	Marionette	INFO	Ceased listening
+示一个节点；显示全部 #1 个节点' for value 301 is invalid -- plural rule #1;
 
-Full message: TypeError: NetworkError when attempting to fetch resource.
+1500706368495	Marionette	INFO	Ceased listening
+: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
-1499852263527	Marionette	INFO	Ceased listening
-s/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
+1500705343599	Marionette	INFO	Ceased listening
+: TypeError: quads is undefined
 Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: TypeError: to is null
 Stack: onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1743:11
 send/<@chrome://marionette/content/server.js -> resource://devtools/shared/transport/transport.js:570:13

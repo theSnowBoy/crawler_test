@@ -99,7 +99,8 @@ def save_db(reviews):
         user='root',
         passwd='123456',
         db='app_sense',
-    )
+    )    ## TODO 复用连接。
+
     sql = "INSERT IGNORE INTO review VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     try:
         cursor = conn.cursor()
@@ -111,8 +112,6 @@ def save_db(reviews):
         cursor.close()
         conn.close()
         print "插入数据结束"
-
-
 
 
 if __name__=='__main__':
