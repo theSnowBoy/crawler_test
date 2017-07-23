@@ -21,7 +21,9 @@ def craw_one_app_reviews(url):
 
     driver.get(url)
     time.sleep(3)
-    reviews = driver.find_element_by_xpath(".//div[@data-load-more-section-id='reviews']")
+    reviews = driver.find_element_by_xpath(".//div[@data-load-more-"
+                                           ""
+                                           "-id='reviews']")
     apk_id = reviews.get_attribute("data-load-more-docid")
 
     results = []

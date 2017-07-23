@@ -1,14 +1,14 @@
-1500713002442	geckodriver	INFO	Listening on 127.0.0.1:62175
-1500713004476	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
-1500713008513	Marionette	INFO	Listening on port 62189
-1500713009033	Marionette	WARN	TLS certificate errors will be ignored for this session
-1500712768852	Marionette	INFO	Ceased listening
-s thrown and uncaught in a Task.
+1500715297628	geckodriver	INFO	Listening on 127.0.0.1:58959
+1500715299650	geckodriver::marionette	INFO	Starting browser D:\software\usualSoft\FireFox\firefox.exe with args ["-marionette"]
+1500715303405	Marionette	INFO	Listening on port 59014
+1500715303809	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
 
 Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
-1500712772615	Marionette	INFO	Ceased listening
+1500714154776	Marionette	INFO	Ceased listening
 s/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
 JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
 JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 403: TypeError: quads is undefined
